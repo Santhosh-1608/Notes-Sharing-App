@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["192.168.0.4","localhost","127.0.0.1",'*','0.0.0.0',"notes-sharing-app-5pso.onrender.com"]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://notes-sharing-app-5pso.onrender.com',
+    # Add other trusted origins as needed
+]
 
 # Application definition
 
@@ -116,7 +120,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
+# https://docs.djangoprotject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
 MEDIA_URL='/media/'
