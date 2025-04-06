@@ -4,13 +4,13 @@
 
 {% if user.is_authenticated %}
 <script>
-	alert('Logged In Successfully...');
+
 	window.location=('{% url 'profile' %}');
 </script>
 {% else %}
 
 <script>
-	alert('Invalid Login Credentials, Try Again');
+
 </script>
 {% endif %}
 
