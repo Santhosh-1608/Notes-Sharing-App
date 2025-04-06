@@ -4,13 +4,13 @@
 
 {% if user.is_authenticated %}
      <script>
-	   alert('Signup Successfull');
+	   
 	   window.location=('{% url 'login' %}');
      </script>
 {% else %}
 
      <script>
-	    alert('Something went wrong, Try Again');
+	    
      </script>
 {% endif %}
 <br><br><br><br>
